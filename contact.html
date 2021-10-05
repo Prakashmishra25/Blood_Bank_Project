@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Form</title>
+    <link rel="stylesheet" href="CSS/CSS/styles.css">
+</head>
+<body>
+    <form action="processer.php" method="post">
+        <fieldset><legend>Log in now</legend> 
+        <strong>Please enter your name</strong>
+        <input name="user" type="text" value="" size="30"><br>
+        <strong>Your password</strong>
+        <input name="pass" type="password" value="" size="10"><br><br>
+        </fieldset>
+        <fieldset><legend>Choices!</legend>
+            <em>favourite color</em>
+            <input name="color" type="text" value="green" size="14"><br><br>
+            My FAVOURITE FRUIT IS:
+            <select name="FRUIT" >
+                <option value="Selected 1">Apple</option>
+                <option value="Selected2">Banana</option>
+                <option value="Selected3">Orange</option>
+            </select> <br><br>
+            I live in a :
+            <input type="radio" name="accom" value="house" checked="checked"/>House
+            <input type="radio" name="accom" value="flat"/>Flat
+            <input type="radio" name="accom" value="bedsit" />Bedsit
+            <input type="radio" name="accom" value="caravan"/>Caravan
+            <br><br>
+            My upload file is: 
+            <input type="file" name="upload" size="40"><br><br>
+        </fieldset>
+            <fieldset><legend>Leaving?</legend> 
+                <Strong>You can leave a message for me over here</Strong><br>
+                <textarea name="comments" rows="10" cols="80" ></textarea><br><br>
+                <input type="submit" name="GO">
+                <input type="reset" value="Start again">
+            </fieldset>
+    </form>
+    <button> </button>
+    
+</body>
+</html>
